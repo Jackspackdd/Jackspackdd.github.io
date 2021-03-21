@@ -2,11 +2,11 @@ var image_tracker = 'dogstandin';
  function change(){
  var image = document.getElementById('gooddog');
  if(image_tracker=='dogstandin'){
- image.src='file:///C:/Users/Malllllll/Desktop/Glizsite/dogsit.jpg';
+ image.src='dogsit.jpg';
  image_tracker='dogsittin';
  }
  else{
- image.src='file:///C:/Users/Malllllll/Desktop/Glizsite/dogstand.jpg';
+ image.src='dogstand.jpg';
  image_tracker='dogstandin';
  }
  }
