@@ -1,0 +1,426 @@
+html {
+  scroll-behavior: smooth;
+}
+.Navbar {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  border: 3px solid darkgreen;
+}
+.navpic {
+  height: auto;
+  border-bottom: 3px solid darkgreen;
+  width: 100%
+}
+.Navbar a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-bottom: 2px solid darkgreen;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+.Navbar a:hover {
+  background-color: darkgreen;
+  color: white;
+}
+.Navbar:last-child {
+  border-bottom: none;
+}
+div.content {
+  margin-left: 150px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+@media only screen and (max-width: 700px) {
+  .Navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .Navbar a {float: left;}
+  div.content {margin-left: 0;}
+  }
+  @media only screen and (max-width: 400px) {
+  .Navbar a {
+    text-align: center;
+    float: none;
+  }
+}
+.form-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  input[type=text], input[type=email], input[type=phone], input[type=number], textarea {
+    width: 90%;
+    margin: 20px auto;
+    border: 100px solid ;
+    box-shadow: 0  0 1px 1px white;
+   }
+  textarea {
+    min-height: 150px;
+  }
+  .panel {
+    background: rgba(0,0,0,.2);
+  .panel-heading {
+      margin-bottom: 20px;
+    }
+  }
+  .btn-group {
+    width: 90%;
+    margin: 0 auto 10px auto;
+  }
+  .back {
+    float: left;
+  }
+  .continue {
+    float: right;
+  }
+}
+/* Multi-Part CSS */
+input[type=checkbox] {
+  position: absolute;
+  /* Position the checkbox in upper left corner */  
+  opacity: 0;
+}
+/* Styling Parts */
+#part1,
+#part2,
+#part3 {
+  z-index: 2;
+  display: block;
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+/* Hidden Parts */
+#part2,
+#part3 {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+/* Show Step 2 & Hide Step 1 */
+#step2:checked ~ #part2 {
+  opacity: 1;
+  height: auto;
+}
+#step2:checked ~ #part1 {
+  opacity: 0;
+  height: 0;
+  display: none;
+}
+/* Show Step 3  & Hide Step 2 */
+#step3:checked ~ #part3 {
+  opacity: 1;
+  height: auto;
+}
+#step3:checked ~ #part2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.contain { 
+  border: 1px solid white;
+  margin-bottom: 3rem;
+}
+#review { 
+  margin-top: 15rem;
+  font-size: 30px;
+  text-decoration: underline;
+  background color: darkgreen;
+}
+.galhead { 
+  text-decoration: underline;
+}
+.cocolor {
+  color: black;
+}
+.cocolor1 {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+.butcontain {
+  display: inline-block;
+  grid-template-columns: auto auto;
+}
+.butcontain1 {
+  display: inline;
+  float: left;
+}
+.butcontain2 {
+  display: inline-block;
+  float: right;
+}
+.gall {
+  display: inline-grid;
+  text-align: center;
+}
+.galpic {
+  margin: 10px;
+}
+#gallerybody {
+  text-align: center;
+}
+.dogpic {
+  width: 250px;
+  height: 250px;
+}
+.dogpic2 {
+  width: 300px;
+  height: 300px;
+}
+.bborder {
+  border-style: solid;
+  border-color: red;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.pic {
+  margin-bottom: 10rem;
+  margin-top: 20rem;
+}
+footer {
+  margin-top: 10rem;
+  display: block;
+  background-color: darkgreen;
+  text-align: center;
+  padding: 1px;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: white;
+}
+.rotate90 {
+  width: 100%;
+  border: 4px solid darkgreen;
+  border-radius: 6px;
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+/* Position text in the middle */
+.middle {
+  text-align: center;
+}
+/* Style the <hr> element */
+.hline {
+  margin: auto;
+  width: 40%;
+}
+.maillink {
+  color: white;
+  text-decoration-line: none;
+}
+.maillink:hover {
+  text-decoration-line: 1px solid;
+  color: darkgreen;
+}
+.black {
+  text-align: center;
+  margin-top: 3rem;
+}
+.fa {
+  text-align: center;
+}
+
+
+
+
+
+
+
+.container{
+  width: 330px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  color: darkgreen;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -40px;
+  font-weight: 500;
+
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: darkgreen;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: darkgreen;
+  background: darkgreen;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: darkgreen;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: darkgreen;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+ @media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 
+  600px) {
+#boxedin { 
+    width: 85%;
+
+  }
+}
+

@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles52.css">
+        <meta name="viewport" content="width=device-width,
+         initial-scale=1, minimum-scale=1" />
+        <title>Scheduling and Checkout page - Jack's Pack Dog Development</title>
+    </head>
+
+
+<div class="Navbar">
+<img src="file:///C:/Users/Malllllll/Desktop/Glizsite/20201115_212858.jpg" alt="logo" class="navpic">
+    <a href="index5.html">Home</a>
+    <a href="About5.html">About</a>
+    <a href="index5.html#Services2">Services</a>
+    <a href="store5.html">Store</a>
+    <a href="gallery5.html">Gallery</a>
+    <a href="gallery5.html#review">Reviews</a>
+    <a href="contact5.html"> Contact </a>
+    <p class="navlo">Based out of South Carolina.</p>
+  </div>
+
+
+
+  <body style="
+ 
+  min-height: 100vh;
+ color: black;
+
+   ">
+
+
+    <div class="container">
+      <header>Jack's Pack <br> Dog Development</header>
+      <div class="progress-bar">
+        <div class="step">
+          <p>
+Pet Info</p>
+<div class="bullet">
+            <span>1</span>
+          </div>
+<div class="check fas fa-check">
+</div>
+</div>
+<div class="step">
+          <p>
+Appointment</p>
+<div class="bullet">
+            <span>2</span>
+          </div>
+<div class="check fas fa-check">
+</div>
+</div>
+<div class="step">
+          <p>
+Contact Info</p>
+<div class="bullet">
+            <span>3</span>
+          </div>
+<div class="check fas fa-check">
+</div>
+</div>
+<div class="step">
+          <p>
+Pay</p>
+<div class="bullet">
+            <span>4</span>
+          </div>
+<div class="check fas fa-check">
+</div>
+</div>
+</div>
+<div class="form-outer">
+        <form action="index.php" method="post">
+          <div class="page slide-page">
+            <div class="title">
+Pet Info:</div>
+<div class="field">
+              <div class="label">
+Pet Name:</div>
+<input type="text" id="boxedin" required>
+            </div>
+            <div class="field">
+              <div class="label">
+Breed:</div>
+<input type="text" id="boxedin" name="breed" required>
+            </div>
+            <div class="field">
+              <div class="label">
+Pet Age:</div>
+<input type="number" id="boxedin" required>
+            </div>
+<div class="field">
+              <div class="label">
+Goals and expectations of <br> your dog and training:</div>
+<textarea type="text" id="boxedin" placeholder="Please try to be specific to your individual needs and avoid things covered in service descriptions."></textarea>
+            </div>
+             <div class="field">
+              <div class="label">
+Things to know/ behavior <br> concerns/habits/ impulses:</div>
+<input type="text" id="boxedin" required>
+            </div>
+
+<div class="field">
+              <button id="boxedin" class="firstNext next">Next</button>
+            </div>
+</div>
+<div class="page">
+            <div class="title">
+Appointment Info:</div> 
+<div class="field">
+              <div class="label">
+Service:</div>
+<select>
+                <option>Basic Obedience</option>
+                <option>Advanced Obedience</option>
+                <option>Problem Solving</option>
+                <option>Behavior Modifications</option>
+                <option>Pet massage</option>
+              </select>
+            </div>
+
+<div class="field">
+              <div class="label">
+Date:</div>
+<input type="Date" id="boxedin" required>
+            </div>
+<div class="field">
+              <div class="label">
+Time:</div>
+<input type="Time" id="boxedin" required>
+            </div>
+<div class="field btns">
+              <button class="prev-1 prev">Previous</button>
+              <button id="boxedin" class="next-1 next">Next</button>
+            </div>
+</div>
+<div class="page">
+            <div class="title">
+Contact Info:</div>
+<div class="field">
+              <div class="label">
+Name:</div>
+<input type="text" id="boxedin" placeholder="First Last" required>
+            </div>
+            <div class="field">
+              <div class="label">
+Email:</div>
+<input type="Email" id="boxedin" placeholder="name@email.com" required>
+            </div>
+            <div class="field">
+              <div class="label">
+Phone:</div>
+<input type="Phone" id="boxedin" placeholder="000-000-0000" required>
+            </div>
+
+<div class="field btns">
+              <button class="prev-2 prev">Previous</button>
+              <button class="next-2 next">Next</button>
+            </div>
+</div>
+<div class="page">
+            <div class="title">
+Payment:</div>
+
+
+
+
+<div id="smart-button-container">
+    <div style="text-align: center"><label for="description"> </label><input type="text" placeholder="Description..." name="descriptionInput" id="description" maxlength="127" value="" required></div>
+      <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+    <div style="text-align: center"><label for="amount"> </label><input name="amountInput" type="number" placeholder="$0.00" id="amount" value="" required><span> USD</span></div>
+      <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+    <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+      <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+    <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+  </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=AaQ_YVwSdmiAT0ZoftBwbTcW-nh0fOuy9lU_qGN0HVgASGKJY74frdfPwKkMezylV0uZZ5sCyHLZ5Q3F" data-sdk-integration-source="button-factory"></script>
+  <script>
+  function initPayPalButton() {
+    var description = document.querySelector('#smart-button-container #description');
+    var amount = document.querySelector('#smart-button-container #amount');
+    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+    var priceError = document.querySelector('#smart-button-container #priceLabelError');
+    var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+    var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+    var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+
+    var elArr = [description, amount];
+
+    if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+      invoiceidDiv.style.display = "block";
+    }
+
+    var purchase_units = [];
+    purchase_units[0] = {};
+    purchase_units[0].amount = {};
+
+    function validate(event) {
+      return event.value.length > 0;
+    }
+
+    paypal.Buttons({
+      style: {
+        color: 'gold',
+        shape: 'rect',
+        label: 'paypal',
+        layout: 'vertical',
+        
+      },
+
+      onInit: function (data, actions) {
+        actions.disable();
+
+        if(invoiceidDiv.style.display === "block") {
+          elArr.push(invoiceid);
+        }
+
+        elArr.forEach(function (item) {
+          item.addEventListener('keyup', function (event) {
+            var result = elArr.every(validate);
+            if (result) {
+              actions.enable();
+            } else {
+              actions.disable();
+            }
+          });
+        });
+      },
+
+      onClick: function () {
+        if (description.value.length < 1) {
+          descriptionError.style.visibility = "visible";
+        } else {
+          descriptionError.style.visibility = "hidden";
+        }
+
+        if (amount.value.length < 1) {
+          priceError.style.visibility = "visible";
+        } else {
+          priceError.style.visibility = "hidden";
+        }
+
+        if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+          invoiceidError.style.visibility = "visible";
+        } else {
+          invoiceidError.style.visibility = "hidden";
+        }
+
+        purchase_units[0].description = description.value;
+        purchase_units[0].amount.value = amount.value;
+
+        if(invoiceid.value !== '') {
+          purchase_units[0].invoice_id = invoiceid.value;
+        }
+      },
+
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: purchase_units,
+        });
+      },
+
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+          alert('Transaction completed by ' + details.payer.name.given_name + '!' + 'Please click finish to submit form' + '!');
+        });
+      },
+
+      onError: function (err) {
+        console.log(err);
+      }
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+  </script>
+    
+    
+
+<div class="field btns">
+              <button class="prev-3 prev">Previous</button>
+              <button type="submit" class="submit" value="submit">Finish</button>
+            </div>
+</div>
+</form>
+</div>
+</div>
+<!-- Somehow I got an error, so I comment the script tag, just uncomment to use -->
+<!-- <script src="script.js"></script> -->
+
+  </body>
+</html>
+
+
+
+
+
+ <script src="scrip5.js"></script>
+        </body>
+    
+
+<footer>
+    <p class="bottom">
+    <a href="contact5.html">Contact me</a>
+       <br>
+       <br>
+    <a href="About5.html">About</a>
+      <br>
+      <br>
+    <a href="store5.html">Products</a>
+      <br>
+    </p>
+  </footer>
+
+        </html>

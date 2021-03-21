@@ -1,0 +1,212 @@
+html {
+  scroll-behavior: smooth;
+}
+.Navbar {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	width: 150px;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+	border: 3px solid darkgreen;
+}
+.Navbar a {
+	display: block;
+	text-decoration: none;
+	padding: 12px 20px;
+	border-bottom: 2px solid darkgreen;
+	text-align: center;
+	color: black;
+	font-size: 16px;
+}
+.Navbar a:hover {
+	background-color: darkgreen;
+	color: white;
+}
+.Navbar:last-child {
+	border-bottom: none;
+}
+div.content {
+	margin-left: 150px;
+	padding: 1px 16px;
+	height: 1000px;
+}
+@media only screen and (max-width: 768px) {
+  .Navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .Navbar a {float: left;}
+  div.content {margin-left: 0;}
+  }
+  @media only screen and (max-width: 400px) {
+  .Navbar a {
+    text-align: center;
+    float: none;
+  }
+}
+ @media only screen and (min-width: 600px) {
+  .doggy {
+    display: inline-grid;
+	grid-template-columns: 50% 50%;
+  }
+  #gooddog {
+  	padding-left: 200px;
+
+  }
+}
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 16px;
+}
+.homeletters {
+	font-weight: bold;
+	font-style: italic;
+}
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	text-decoration: darkgreen underline;
+	background-color: darkgreen;
+	padding: 15px;
+}
+.rotate90 {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	border: 4px solid darkgreen;
+	border-radius: 6px;
+	height: 350px;
+}
+.homelo {
+	text-align: center;
+}
+#Services2 {
+	margin-top: 7rem;
+	margin-bottom: 8px;
+	font-size: 60px;
+	text-decoration: underline;
+	background color: darkgreen;
+}
+.Service3 {
+	margin-top: 5px;	
+}
+#gooddog {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+}
+/* Container needed to position the button. Adjust the width as needed */
+.doggy {
+  position: relative;
+  width: 50%;
+}
+/* Make the image responsive */
+.doggy img {
+  width: 100%;
+  height: auto;
+}
+/* Style the button and place it in the middle of the container/image */
+.doggy .sitbtn {
+  position: absolute;
+  top: 51%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: darkgreen;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  pointer-events: none;
+  border-radius: 5px;
+}
+.doggy .sitbtn:hover {
+  background-color: black;
+}
+footer {
+	display: block;
+	background-color: darkgreen;
+	text-align: center;
+	padding: 1px;
+}
+footer a {
+	color: white;
+}
+dl {
+	border-color: black;
+	border-left-color: green;
+	border-left-width: 6px;
+	border-style: solid;	
+}
+dl:hover {
+	border-color: darkgreen;
+}
+.butcontain {
+ text-align: center;
+}
+
+.butcontain1 {
+  display: inline-block;
+}
+
+.butcontain2 {
+  display: inline-block;
+}
+
+.servicesc {
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.bookme {
+	border: none;
+	text-align: center;
+	background-color: black;
+	transition: 0.3s;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	width: 250px;
+}
+.bookme:hover {
+	opacity: 1;
+	background-color: darkgreen;
+  color: white;
+}
+.homebut {
+	background-color: #22684e;
+	border: none;
+	text-align: center;
+	opacity: 0.6;
+	transition: 0.3s;
+	padding: 16px 32px;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+}
+.homebut a , .bookme a {
+	color: white;
+	text-decoration: none;
+}
+.homebut:hover {
+	opacity: 1;
+	background-color: darkgreen;
+}
+.more {
+	font-size: 30px;
+	text-decoration: underline;
+}
+.sitelink {
+	font-size: 10px;
+	text-align: center;
+}
+
